@@ -22,6 +22,14 @@
                     height: 40px;
                 }
             }
+            @media only screen and (max-width: 850px) {
+                flex-direction: column;
+                gap: 16px;
+
+                > div {
+                    flex-direction: column;
+                }
+            }
         }
     }
 
@@ -37,7 +45,6 @@
             h1 {
                 font-family: "Poppins", sans-serif;
                 font-size: 24px;
-                color: #29292e;
             }
 
             span {
@@ -81,7 +88,7 @@
 
                     span {
                         margin-left: 8px;
-                        color: #29292e;
+
                         font-weight: 500;
                         font-size: 14px;
                     }
@@ -107,6 +114,24 @@
 
         .question-list {
             margin-top: 32px;
+        }
+
+        @media only screen and (max-width: 850px) {
+            margin: 0 20px;
+
+            .room-title {
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            .room-title {
+                flex-direction: column;
+            }
+
+            .form-footer button {
+                font-size: 0.8rem;
+                padding: 0 22px;
+            }
         }
     }
 }
